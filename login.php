@@ -1,4 +1,4 @@
-<?php 
+<?php  
 session_start();
 $pdo = new PDO('mysql:host=localhost;dbname=webchat', 'root', '');
  
@@ -23,11 +23,11 @@ if(isset($_GET['login'])) {
  $_SESSION['usermobilnummer'] = $user['mobilnummer'];
  $_SESSION['usergeschlecht'] = $user['geschlecht'];
  
- die('<p>Login erfolgreich. Weiter zur <a href="profil.php">Profilseite</a></p>');
+ die('<p>Login erfolgreich. Weiter zur <a href="profil.php">Profilseite</a><br>
+		 Weiter zum <a href="index.php">Chat</a></p>');
  } else {
  $errorMessage = "<p>E-Mail oder Passwort war ungültig<br></p>";
- }
- 
+ } 
 }
 ?>
 
