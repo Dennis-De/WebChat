@@ -39,7 +39,7 @@ if(isset($_GET['optionen'])) {
 
  if($result) { 
 
- echo 'Der Status wurde geändert in '.$status.' geändert.';
+ echo 'Der Status wurde in "'.$status.'" geändert.';
 
  $showFormular = false;
 
